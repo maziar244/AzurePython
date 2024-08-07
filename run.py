@@ -3,6 +3,7 @@ import os
 
 app = Flask(__name__, static_folder='wwwroot', static_url_path='')
 
+
 @app.route('/')
 def serve_index():
     return send_from_directory('wwwroot', 'index.html')
